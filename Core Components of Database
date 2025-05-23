@@ -1,0 +1,40 @@
+Databases rely on several interconnected components to function effectively. 
+These components work together to store, manage, retrieve, and secure data while ensuring efficient performance and reliability.
+Understanding these components is vital for database engineers to design and optimize robust systems.
+
+1- Query Processor:
+  Key subcomponents
+  1- Query Parsor
+  2- Query optimizer
+  3- Execution Engine
+
+2- Storage Engine
+  Key responsiblilies:
+  - Organize data into pages, blocks and files
+  - Manages indexing for faster data retrival
+  - Support various storage formats such as row based or column storage
+  Popular Storage Engines
+  -InnoDB: Used in MYSQL, support ACID properties
+  -WiredTiger: Used in MangoDB for document based storage
+
+3- Transaction Manager
+  Starts, commits, or rollback transactions
+  Monitors concurrency to avoid conflicts
+
+4- Lock Manager
+  Types of Locks
+  Shared Locks: Allows multiple users to read a resource
+  Exclusive Locks: Prevent others from accessing the resource until the operation is completed
+
+5- Cache Manager
+  How it works
+  Temperary stores query results or indexed data
+  Reduce disk I/O operations, enhancing performance
+
+6- Recovery Manager
+  Functions
+  Maintain logs of all transactions
+  Performs rollback or rollforward operations
+
+Catalog
+  Stores information about the database
