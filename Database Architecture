@@ -1,0 +1,68 @@
+1- Client Server Architecture:
+  Two tier architecture where clients directly interact with a database server. 
+  Advantages:
+    Simplicity makes it easier to implement and manage
+    Direct communication between client and server reduces complexity for small scales systems.
+  Disadvantages:
+    Scalability is limited because a single server may struggle to handle many requests simultaneously.
+    Updates to server side logic may require changes to all client applications.
+Use Cases:
+  Small business tools, personal applications, or systems with limited number of users.
+
+2- Three tier architecture:
+  Three tier architecture builds on client-server model by introducing an intermediate application layer.
+  - Presentation Layer (Client): Provides the user interface and interact with the users.
+  - Application Layer (Middleware): Processes business logic, validate data, and coordinate between the client and database.
+  - Data Layer (Database): Stores and manages the application data.
+  Advantages:
+    Layers can be scaled independently to handle increased load
+    Easier to manage and update as changes in one layer do not directly affect othres.
+  Disadvantages:
+    Add complexity as compared to two tier system.
+    Communication between layers may introduce slight delays.
+  Use Cases:
+    Web-based applications, such as e-commerce platforms or enterprise resource planning systems(ERP).
+
+N-Tier Architecture:
+  Extends the three tier model by introducing additional layers such as service layers, integration layers, or caching layers.
+  Advantages:
+    Highly scalable as each layer can be distrubted across multiple layers.
+    improved fault tolerance, as individual layers can work independently of one another.
+  Disadvantages:
+    Increased complexity in managing and coordinating multiple layers.
+    Higher latency due to the additional communication overhead.
+  Use Cases:
+    Complex systems with high performance requirements, such as multi service enterprise applications or microservices architecture.
+
+Cloud-Based Database Architecture:
+  Cloud-Based Databases host databases on cloud platforms, such as Amazon Web Services(AWS), Google Cloud Platform, or Microsoft Azure.
+  Cloud Database may be deployed in various models:
+  Infrastructure as a service(IaaS): Provides virtual machines for hosting traditional databases.
+  Platform as a service(PaaS): Offers managed Database services such AWS RDS, or Google Cloud SQL.
+  Software as a service(SaaS): Provides fully managed applications that abstracts database interactions, like Salesforce or Google workspace.
+  Advantages: Elastic scalability to handle variable workload.
+  Managed services reduce operation overhead, such as backup and update.
+  Accessable from anywhere with an internect connection.
+  Disadvantages: 
+    Dependency on internet connectivity.
+    Potential concerns about security and compliance.
+  Use Cases:
+  Startups and growing businesses needing rapid scalability.
+  Applications with global user bases requiring high avaliability.
+
+Distributed Database Architecture:
+  Distributed Database Architecture stores data across multiple physical locations, often in different regions.
+  Key Features:
+    Data Partioning:Divides data into smaller segments distributed across nodes.
+    Replication: Creates copies of data across multiple nodes to ensure availabilty and fault tolerance.
+    Consistency Models: Offers different levels of data consistency, ranging from strong consistency to eventual consistency, depending upon the application requirements.
+  Advantages:
+    Scalability: Handles large scale applications with high transiaction volume.
+    Fault Tolerance: Ensure avaliabilty even in event of node failures.
+    Low Latency: Places data closer to users to reduce access time.
+  Disadvantages:
+    Complexity: Managing distributed nodes and ensuring data consistency is challenging.
+    Network latency: Communication between nodes can add delays for certain operations.
+  Use Cases:
+    Global applications requiring low latency access, such as social networks or streaming platforms.
+    Large scale analytics platforms and Iot systems.
