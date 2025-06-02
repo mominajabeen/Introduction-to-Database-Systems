@@ -1,0 +1,65 @@
+                          Relational Models:
+Organises data into tables (also know as relations) in form of rows and columns
+Tables: Each table represents an entity, with rows representing individual records and columns represents attributes of the entity.
+Keys: Primary keys uniquely identify each record,  while foreign keys establish relationships between tables.
+Characteristics:
+Structured Schema: Enforces a predefined schema, ensuring data consistency and integrity.
+ACID Compliance: Guarantees Atomicity, Consistency, Isolation, and Durability for transactions.
+SQL Support: Utilizes Structured Query Language (SQL) for data manipulation and querying.
+Advantages
+Data Integrity: Strong enforcement of data constraints ensures accuracy and reliability.
+Flexibility in Querying: Powerful SQL capabilities allow complex queries and data manipulations.
+Standardization: Widely adopted standards facilitate interoperability between different DBMSs.
+Disadvantages
+Scalability Limitations: Vertical scaling (enhancing a single server) can be costly and has physical limits.
+Rigid Schema: Adapting to changing data requirements may require significant schema modifications.
+Performance Overheads: Complex joins and transactions can lead to performance bottlenecks in large-scale applications.
+Examples
+Oracle Database
+Microsoft SQL Server
+MySQL
+PostgreSQL
+                          Non-Relational Models (NoSQL)
+Provide flexible data models designed to handle unstructured or semi-structured data, high scalability, and distributed data storage.
+Types of NoSQL Databases
+Document Stores
+
+Structure: Store data in documents, typically using JSON, BSON, or XML formats.
+Flexibility: Schema-less design allows varying data structures within the same collection.
+Use Cases: Content management systems, real-time analytics.
+Examples: MongoDB, CouchDB
+Key-Value Stores
+
+Structure: Store data as simple key-value pairs.
+Simplicity: Highly efficient for read/write operations where the key is known.
+Use Cases: Session management, caching, real-time data feeds.
+Examples: Redis, Riak, Amazon DynamoDB
+Column-Family Stores
+
+Structure: Organize data into columns grouped into families, allowing storage of large volumes of data.
+Scalability: Designed for high write and read throughput across distributed systems.
+Use Cases: Time-series data, big data applications.
+Examples: Apache Cassandra, HBase
+Graph Databases
+
+Structure: Use graph structures with nodes, edges, and properties to represent and store data.
+Flexibility: Excellent for handling complex relationships and interconnected data.
+Use Cases: Social networks, recommendation engines, fraud detection.
+Examples: Neo4j, Amazon Neptune
+Characteristics
+Flexible Schema: Allows dynamic data models that can evolve with application requirements.
+Horizontal Scalability: Easily scales out across multiple servers or clusters.
+Eventual Consistency: Many NoSQL systems prioritize availability and partition tolerance, offering eventual consistency over strict ACID compliance.
+Advantages
+Scalability: Optimized for distributed environments, handling large-scale data efficiently.
+Performance: Tailored for specific use cases, offering high performance for targeted operations.
+Flexibility: Accommodates diverse and evolving data structures without significant schema changes.
+Disadvantages
+Limited Standardization: Lack of universal query languages can lead to complexity in querying and integration.
+Eventual Consistency: May not be suitable for applications requiring immediate consistency.
+Complexity in Transactions: Handling complex transactions and ensuring data integrity can be challenging.
+Examples
+MongoDB (Document Store)
+Redis (Key-Value Store)
+Cassandra (Column-Family Store)
+Neo4j (Graph Database)
